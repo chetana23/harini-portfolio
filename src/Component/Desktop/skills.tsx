@@ -6,13 +6,14 @@ import email from '../../assets/images/emailimg.png';
 import minimize from '../../assets/images/minimize.png';
 import closeButton from '../../assets/images/closeButton.png';
 import fileEnding from '../../assets/images/fileending.png';
+import commandPrompt from '../../assets/images/commandPrompt.png';
 
 // Ensure a global z-index counter exists
 if (typeof window.zIndexCounter === 'undefined') {
   window.zIndexCounter = 1000;
 }
 
-export const Contact = ({
+export const Skills = ({
     isContactPageOpen,
     setIsContactPageOpen,
     isContactMinimize,
@@ -97,7 +98,7 @@ export const Contact = ({
       {isContactPageOpen ? (
         <div
           id="contact"
-          className="sc-fznLPX dtmoaU"
+          className="sc-fznLxA gQRraV"
           style={{
             position: 'fixed',
             top: `${position.y}px`,
@@ -110,11 +111,14 @@ export const Contact = ({
           <div>
             {/* Draggable header */}
             <div
-              className="sc-fzqNqU kikdAh"
+              className="ssc-fzoJus bPIkEp"
               onMouseDown={handleMouseDown}
               style={{ cursor: 'grab' }}
             >
-              <div className="sc-fzoyTs jZUSDr">say_hello.txt</div>
+            <div className="sc-fznyYp kdOAmQ">
+                {/* <img src={commandPrompt} alt="cmd logo" className="sc-fzpisO jHQZJv"></img> */}
+                <div className="sc-fzoVTD Atfvz">D:\WIN\system32\cmd.exe</div>
+            </div>
               <div className="sc-fznxsB cUWXFh">
                 <img
                   src={minimize}
@@ -128,26 +132,6 @@ export const Contact = ({
                   className="sc-fznJRM bTIjTR"
                   onClick={handleClosePopup}
                 />
-              </div>
-            </div>
-
-            <div className="sc-fzqARJ eLpUJW">
-              <div className="sc-fznWqX dAkvW">
-                <div className="sc-fzoiQi ozSmQ">
-                  <u>F</u>ile
-                </div>
-                <div className="sc-fzoiQi ozSmQ">
-                  <u>E</u>dit
-                </div>
-                <div className="sc-fzoiQi ozSmQ">
-                  <u>V</u>iew
-                </div>
-                <div className="sc-fzoiQi ozSmQ">
-                  <u>O</u>ptions
-                </div>
-                <div className="sc-fzoiQi ozSmQ">
-                  <u>H</u>elp
-                </div>
               </div>
             </div>
           </div>
@@ -208,4 +192,4 @@ export const Contact = ({
   );
 };
 
-export default Contact;
+export default Skills;
